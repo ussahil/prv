@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+  background-color: rgba(207, 19, 19, 0.801);
+
+}
+
+/* menu  */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+
+}
+
+.img-logo {
+  width: 50%;
+
+}
+
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+
+}
+
+/* menu  */
+
+.icon {
+  display: none;
+}
+
+.menu-item {
+
+  color: black;
+  font-style: italic;
+  text-decoration: none;
+  font-size: var(--font);
+  font-size: 2rem;
+}
+
+.menu-item1 {
+  color: black;
+  font-style: italic;
+  text-decoration: none;
+  font-size: var(--font);
+}
+
+.menu-item:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (max-width:1100px) {
+  /* .menu li {
+    display: none;
+  } */
+
+  .icon {
+    padding: 2rem;
+    display: block;
+
+  }
+
+
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+
+  }
+
+
+  .menu-item {
+    display: none;
+
+    padding-bottom: 1rem;
+  }
+
+  .menu-item.active {
+    display: flex;
+  }
+
+}
+
+/* menu end  */
+.wrapper {
+
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.container h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 350px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgb(254, 185, 164);
+}
+
+.input-field {
+  padding-bottom: 10px;
+
+}
+
+.input-field input[type='text'],
+.input-field input[type='email'],
+.input-field input[type='tel'] {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+}
+
+
+
+.btn input[type='submit'] {
+  border: 0;
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(254, 185, 164);
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.error-message {
+  margin-bottom: 20px;
+  padding: 0px;
+  background-color: #fe8bbe;
+  transition: all 0.5s ease;
+  font-size: all 0.5s ease;
+}

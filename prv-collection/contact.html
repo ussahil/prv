@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact With Us</title>
+  <link rel="stylesheet" href="/css/contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="logo">
+    <img src="images-default/onlinelogomaker-081721-1335-8476.svg" alt="logo" srcset="" class="img-logo">
+  </div>
+  <header>
+    <nav>
+
+      <li class="menu-item1 icon"> <i class="fa fa-bars"></i></li>
+      <ul class="menu" id="menu">
+
+        <li><a href="/index.html" class="menu-item">Home</a></li>
+        <li><a href="/products.html" class="menu-item">Bedsheets</a></li>
+        <li><a href="/products.html" class="menu-item">Jewellery</a></li>
+        <li><a href="/products.html" class="menu-item">Towels</a></li>
+        <li class=""><a href="/#nightsuits" class="menu-item">NightSuits</a></li>
+        <li class=""><a href="/contact.html" class="menu-item">Contact</a> </li>
+
+      </ul>
+    </nav>
+  </header>
+  <div class="wrapper">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <h2>+919464184330</h2>
+
+      <h2>prvcollection@gmail.com</h2>
+      <div class="error-message"></div>
+      <form method="POST" data-netlify='true' id="myForm">
+        <div class="input-field">
+          <input type="text" placeholder="Name" name="name" required>
+        </div>
+        <div class="input-field">
+          <input type="tel" placeholder="Phone" name="phone" required pattern="[789][0-9]{9}">
+        </div>
+        <div class="input-field">
+          <input type="email" placeholder="Email" name="email" required>
+        </div>
+        <div class="input-field">
+          <div data-netlify-recaptcha="true"></div>
+        </div>
+        <div class="btn">
+          <input type="submit">
+        </div>
+      </form>
+    </div>
+
+  </div>
+  <script src="./js/contact.js"></script>
+</body>
+
+</html>
